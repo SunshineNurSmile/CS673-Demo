@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ChatFragment">
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="500dp"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello! This is your coach!"
+        android:textSize="8pt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="512.5dp"
+        app:layout_constraintStart_toEndOf="@+id/profilePic"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/profilePic1"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="550dp"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey!"
+        android:textSize="8pt"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="562.5dp"
+        app:layout_constraintEnd_toStartOf="@+id/profilePic1"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/addsign"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/addsign">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your message here" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
